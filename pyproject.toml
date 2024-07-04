@@ -19,6 +19,7 @@ ops-scenario = {git = "https://github.com/canonical/ops-scenario.git", rev = "7.
 pytest = "^8.2.2"
 pytest-xdist = "^3.6.1"
 pydantic = "^2.8.2"
+pyright = "^1.1.370"
 
 [build-system]
 requires = ["poetry-core"]

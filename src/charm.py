@@ -13,7 +13,7 @@ class FakeIngressCharm(ops.CharmBase):
         super().__init__(*args)
         self.per_app = IngressPerAppProvider(charm=self)
         self.framework.observe(self.per_app.on.data_provided, self.provided)
-        self.farmework.observe(self.per_app.on.data_removed, self.removed)
+        self.framework.observe(self.per_app.on.data_removed, self.removed)
 
     def provided(self, event: RelationEvent):
         logging.warning("proivided raw %s", event.snapshot())
