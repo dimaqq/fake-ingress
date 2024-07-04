@@ -28,7 +28,9 @@ lint.extend-ignore = [
 ]
 lint.ignore = ["E501", "D107"]
 extend-exclude = ["__pycache__", "*.egg_info"]
-lint.per-file-ignores = { "src/*" = ["D102"], "tests/*" = ["D100","D101","D102","D103","D104"] }
+[tool.ruff.lint.per-file-ignores]
+'src/*' = ['D100', 'D102']
+'tests/*' = ['D100', 'D101', 'D102', 'D103', 'D104']
 
 [tool.ruff.lint.mccabe]
 max-complexity = 10

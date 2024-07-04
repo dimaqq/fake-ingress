@@ -1,4 +1,4 @@
-"""Fake Ingress."""
+#!/usr/bin/env python3
 import logging
 
 import ops
