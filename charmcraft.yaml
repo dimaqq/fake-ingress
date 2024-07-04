@@ -1,0 +1,17 @@
+---
+name: fake-ingress
+type: charm
+title: Fake Ingress
+summary: Fake Ingress
+description: Charm providing fake ingress
+bases:
+  - build-on:
+    - name: ubuntu
+      channel: "22.04"
+    run-on:
+    - name: ubuntu
+      channel: "22.04"
+provides:
+  ingress:
+    interface: ingress
+    description: Fake load balancing
