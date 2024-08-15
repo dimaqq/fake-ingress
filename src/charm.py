@@ -2,7 +2,7 @@
 """ Charm entrypoint. """
 from ops import main
 
-from fake_charm import FakeIngressCharm
+from fake_ingress import FakeIngressCharm
 
 
 if __name__ == "__main__":  # pragma: nocover
